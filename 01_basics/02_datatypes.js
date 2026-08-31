@@ -22,3 +22,10 @@ let state;
 
 
 console.log(typeof "hitesh")
+
+
+
+
+
+
+
