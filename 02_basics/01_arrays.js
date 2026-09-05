@@ -20,7 +20,6 @@ mynewarray.shift()
 console.log("A", mynewarray)
 
 const mynewarray3 = mynewarray.slice(1, 3)
-
 console.log("b", mynewarray3);  
 
 const mynewarray4 = mynewarray.splice(1, 3)
