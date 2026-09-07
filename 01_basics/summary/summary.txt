@@ -1,0 +1,1 @@
+// in this assisgnment we have learnt about variables, datatypes, conversionOperations, comparisions, strings in javascpipt, numbers and mathematics in java script, how date and time woork in javascript how they fetch information in real time applicataion and how date and time is important ian real world applictaion. 
