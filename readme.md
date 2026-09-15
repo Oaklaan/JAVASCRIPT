@@ -1,4 +1,4 @@
-# 🚀 Complete JavaScript — Zero to Hero
+# 🚀 Complete JavaScript — Zero to Hero!!!
 
 > **A complete JavaScript learning journey from fundamentals to advanced concepts, following the JavaScript series by Hitesh Choudhary (Chai aur Code).**
 
