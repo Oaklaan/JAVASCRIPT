@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div') //here we create a div element
+    console.log(div); // here we check what actually div contains
+    //from here we are going to do some opetations on div element 
+    div.className = "main" //here we assign a class to a div element 
+    div.id = Math.round(Math.random() * 10 + 1) // we assign a id to a div using math library 
+    div.setAttribute("title", "generated title") // here we set attrinute as key and value pair
+    div.style.backgroundColor = "green" //adding colors to backgroung
+    div.style.padding = "12px"
+    // div.innerText = "Chai aur code"   //we gave name to this
+    const addText = document.createTextNode("Chai aur code") //here we are creating our text node  
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+    //in this lecture we have learnt abou how to travaers dom tree , how to list ot parent child and and how to append them and create them  
+    const div2 = document.createElement('div')
+    div2.className = "main"
+    div2.setAttribute("title2", "generated title2")
+    div2.style.backgroundColor = "blue"
+    div2.id = "div2"
+    const addtext2 = document.createTextNode("chai and code 2")
+    div2.appendChild(addtext2) 
+    document.body.appendChild(div2)  //step bystep of creation of dom element end to end. id, appendiing child and giving it text node is imortant
+</script>
+</html>
+
+
