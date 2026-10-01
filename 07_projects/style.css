@@ -1,0 +1,113 @@
+:root {
+    color-scheme: light;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #27251f;
+    background: #f5f1e8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 56px 24px;
+    background:
+        radial-gradient(ellipse at top left, #fffaf0 0, transparent 55%),
+        #f5f1e8;
+}
+
+main {
+    width: min(100%, 720px);
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 0 28px;
+    color: #302d25;
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+}
+
+.projects ol {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: project;
+}
+
+.projects li {
+    counter-increment: project;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 72px;
+    padding: 18px 20px;
+    border: 1px solid #e4ddcf;
+    border-radius: 14px;
+    background: rgb(255 255 255 / 75%);
+    color: #343128;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgb(57 46 26 / 5%);
+    transition:
+        border-color 160ms ease,
+        background-color 160ms ease,
+        box-shadow 160ms ease,
+        transform 160ms ease;
+}
+
+.project-link::before {
+    content: counter(project, decimal-leading-zero);
+    display: grid;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    place-items: center;
+    border-radius: 10px;
+    background: #eee6d7;
+    color: #75572c;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    border-color: #c9a96e;
+    background: #fff;
+    box-shadow: 0 8px 20px rgb(57 46 26 / 10%);
+}
+
+.project-link:focus-visible {
+    outline: 3px solid #9a7138;
+    outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 40px 18px;
+    }
+
+    .project-link {
+        min-height: 64px;
+        padding: 14px 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
